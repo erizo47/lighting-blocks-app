@@ -1,0 +1,69 @@
+:root {
+  --backgroundDark: #0b0b0b;
+  --backgroundLight: #dfdfdf;
+  --buttonDark: #FF1EAD;
+  --buttonLight: #0b0b0b;
+  --buttonPinDark: #fff;
+  --buttonPinLight: #dfdfdf;
+  --squareColor: #a8a8a87c;
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: var(--backgroundDark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      margin: 0;
+      transition: 2s background ease;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 440px;
+      flex-wrap: wrap;
+    }  
+    .square {
+      width: 18px;
+      height: 18px;
+      background: var(--squareColor);
+      margin: 2px;
+      border-radius: 3px;
+      box-shadow: 0 0 2px #000000;
+      transition: 2s ease-out;
+      cursor: pointer;
+    }
+    .square:hover {
+      transition-duration: 0s;
+    }
+
+    .theme-switch {
+      width: 70px;
+      height: 30px;
+      background: var(--buttonDark);
+      border-radius: 50px;
+      position: relative;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .switch {
+      background: var(--buttonPinDark);
+      width: 24px;
+      height: 24px;
+      background: var(--backgroundDark);
+      border-radius: 100%;
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      transition: 0.5s all ease;
+    }
+    
+ 
+  
